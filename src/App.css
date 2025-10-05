@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+/* For example, if you are using Tailwind CSS, you might have this in a different file like index.css */
+
+body {
+  font-family: sans-serif;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.aspect-w-16 {
+  position: relative;
+}
+
+.aspect-w-16::before {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
