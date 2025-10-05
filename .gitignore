@@ -43,3 +43,4 @@ echo "securestay1.zip" >> .gitignore
 git add .gitignore
 git commit -m "Ignore securestay1.zip"
 git push origin main
+backend.env
